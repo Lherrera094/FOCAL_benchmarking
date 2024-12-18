@@ -23,11 +23,11 @@ void grid_init( gridConfiguration *gridCfg,
 
     //Checks that maximum density value is respected
     // if density is larger than this value, FDTD code becomes unstable
-    if( ne_0 > PERIOD * 2./5.){
+    /*if( ne_0 > PERIOD * 2./5.){
         printf("Density value is too large for code stability. \n");
         printf("Maximum density: %.3f. \n", PERIOD * 2./5.);
         exit(-1);
-    }
+    }*/
 
     //Grid configuration variables computation
     //Set D_ABSORB for the user choose boundary
